@@ -24,7 +24,8 @@ def index():
     print(request.form.get('username'))
     # 获取文本数据   request.data   request.json
     print(request.data)   #bytes
-    print(request.json.get('score'))
+    print(request.json.get('score'))  #会将接收到的json字符串转化为字典
+
 
 
 
